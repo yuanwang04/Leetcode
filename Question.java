@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Question { 
+public class Question implements Solution { 
    
    public static int myAtoi(String str) {
       while (str.length() > 0) { // get rid of leading white space
@@ -968,6 +968,41 @@ public class Question {
          }
       }
       return dp[n];
+   }
+   
+   Map<String, List<String>> cacheWordBreak = new HashMap<>();
+   
+   public List<String> wordBreak(String s, List<String> wordDict) {
+      if (cacheWordBreak.containsKey(s)) {
+         return cacheWordBreak.get(s);
+      }
+      List<String> result = new ArrayList<>();
+      for (String str : wordDict) {
+         if (s.indexOf(str) == 0) {
+            String remain = s.substring(str.length());
+            if (remain.isEmpty()) {
+               result.add(str);
+            } else {
+               List<String> nextResult = wordBreak(remain, wordDict);
+               for (String r : nextResult) {
+                  result.add(str + " " + r);
+               }
+            }
+         }
+      }
+      cacheWordBreak.put(s, result);
+      return result;
+   }
+   
+   public int roomTransport(int n, int[] nums) {
+      if (n == 0) 
+         return 1;
+      int[] dp = new int[n + 1];
+      dp[0] = 0;
+      for (int i = 1; i < dp.length; i++) {
+         dp[i] = dp[i-1]+ (dp[i-1] - dp[nums[i - 1] - 1]) + 2;
+      }
+      return dp[n] % 1000000007;
    }
    
 }
