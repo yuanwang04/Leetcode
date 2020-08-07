@@ -1,4 +1,8 @@
-public class Solve {
+/*
+   Generates a snake matrix of the given size (odd).
+*/
+
+public class SnakeMatrix {
    
    public static void main(String[] args) {
       int[][] res = snakePointer(7);
@@ -67,6 +71,40 @@ public class Solve {
          
       }
       return res;
+   }
+   // more ways of generating different matrix
+   public int[][] generateMatrix(int n) {
+      int[][] result = new int[n][n];
+      int c = 1;
+      int level = 0;
+      while (level < n/2) {
+            //top
+         for (int i = level; i < n-1-level; i++) {
+            result[level][i] = c;
+            c++;
+         }
+            //right
+         for (int i = level; i < n-1-level; i++) {
+            result[i][n-1-level] = c;
+            c++;
+         }
+            //bot
+         for (int i = n-level-1; i > level; i--) {
+            result[n-1-level][i] = c;
+            c++;
+         }
+            //left
+         for (int i = n-level-1; i > level; i--) {
+            result[i][level] = c;
+            c++;
+         }
+         level++;
+      }
+      if (n%2 == 1) {
+         result[n/2][n/2] = c;
+      }
+      return result;
+        
    }
 
 

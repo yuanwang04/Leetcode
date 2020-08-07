@@ -129,52 +129,7 @@ public class Question implements Solution {
       }
       return true;
    }
-  
-   
-   // k-sum
-   public List<List<Integer>> twoSum(int[] nums, int target, int i) {
-      List<List<Integer>> result = new ArrayList<>();
-      int j = nums.length - 1;
-      while (i < j) {
-         int sum = nums[i] + nums[j];
-         if (sum == target) {
-            List<Integer> oneAnswer = new ArrayList<>();
-            oneAnswer.add(nums[i]);
-            oneAnswer.add(nums[j]);
-            result.add(oneAnswer);
-            i++;
-            j--;
-            while (i < j && nums[j] == nums[j+1]) {
-               j--;
-            }
-         } else if (sum < target) {
-            i++;
-         } else {
-            j--;
-         }
-      }
-      return result;
-   }
-    
-   public List<List<Integer>> kSum(int[] nums, int target, int start, int k) {
-      if (k == 2) {
-         return twoSum(nums, target, start);
-      }
-      List<List<Integer>> result = new ArrayList<>();
-      int chosen = start;
-      while (chosen < nums.length - 2) {
-         List<List<Integer>> lst = kSum(nums, target - nums[chosen], chosen+1, k-1);
-         for (List<Integer> oneSolution : lst) {
-            oneSolution.add(nums[chosen]);
-         }
-         result.addAll(lst);
-         chosen++;
-         while (chosen < nums.length-2 && nums[chosen] == nums[chosen-1]) {
-            chosen++;
-         }
-      }
-      return result;
-   }
+
    
    public String minWindow(String s, String t) {
       Map<Character, Integer> target = new HashMap<>();
@@ -242,40 +197,7 @@ public class Question implements Solution {
       }
    }
  
-   public boolean isMatchDP(String s, String p) {
-      int n1 = s.length();
-      int n2 = p.length();
-      boolean[][] dp = new boolean[n1+1][n2+1];
-      dp[0][0] = true;
-      for (int i = 1; i <= n1; i++) {
-         dp[i][0] = dp[i-1][0] && s.charAt(i-1) == '*';
-      }
-      for (int j = 1; j <= n2; j++) {
-         dp[0][j] = dp[0][j-1] && p.charAt(j-1) == '*';
-      }
-      for (int diag = 1; diag <= Math.min(n1, n2); diag++) {
-         dp[diag][diag] = check(dp, s, p, diag, diag);
-         for (int i = diag + 1; i <= n1; i++) {
-            dp[i][diag] = check(dp, s, p, i, diag);
-         }
-         for (int j = diag + 1; j <= n2; j++) {
-            dp[diag][j] = check(dp, s, p, diag, j);
-         }
-      }
-      return dp[n1][n2];
-   }
-    
-   public boolean check(boolean[][] dp, String s, String p, int i, int j) {
-      return (dp[i-1][j-1] && (s.charAt(i-1) == p.charAt(j-1)
-                                || s.charAt(i-1) == '?'
-                                || s.charAt(i-1) == '*'
-                                || p.charAt(j-1) == '?'
-                                || p.charAt(j-1) == '*'))
-            || (dp[i-1][j] && (s.charAt(i-1) == '*' 
-                              || (p.charAt(j-1) == '*')))
-            || (dp[i][j-1] && (p.charAt(j-1) == '*'
-                              || (s.charAt(i-1) == '*')));
-   }
+
    public double myPow(double x, int n) {
       if (n == 0) {
          return 1;}
@@ -297,7 +219,7 @@ public class Question implements Solution {
       if (intervals.length <= 1) {
          return intervals;
       }
-      quicksort(intervals, 0, intervals.length-1);
+      Quicksort.quicksort(intervals, 0, intervals.length-1);
       int top = intervals[0][1];
       int bot = intervals[0][0];
       List<int[]> lst = new ArrayList<>();
@@ -318,30 +240,7 @@ public class Question implements Solution {
       return result;
    }
    
-   public void quicksort(int[][] arr, int i, int j) {
-      if (i < j) {
-         int pi = partition(arr, i, j);
-         quicksort(arr, i, pi-1);
-         quicksort(arr, pi+1, j);
-      }
-   }
-    
-   public int partition(int[][] arr, int i, int j) {
-      int pivot = arr[j][0];
-      int left = i;
-      for (int right = i; right < j; right++) {
-         if (arr[right][0] <= pivot) {
-            int[] temp = arr[right];
-            arr[right] = arr[left];
-            arr[left] = temp;
-            left++;
-         }
-      }
-      int[] temp = arr[j];
-      arr[j] = arr[left];
-      arr[left] = temp;
-      return left;
-   }
+
    
    public int[][] insert(int[][] intervals, int[] newInterval) {
         // return new interval
@@ -403,39 +302,7 @@ public class Question implements Solution {
       return result;
    }
    
-   public int[][] generateMatrix(int n) {
-      int[][] result = new int[n][n];
-      int c = 1;
-      int level = 0;
-      while (level < n/2) {
-            //top
-         for (int i = level; i < n-1-level; i++) {
-            result[level][i] = c;
-            c++;
-         }
-            //right
-         for (int i = level; i < n-1-level; i++) {
-            result[i][n-1-level] = c;
-            c++;
-         }
-            //bot
-         for (int i = n-level-1; i > level; i--) {
-            result[n-1-level][i] = c;
-            c++;
-         }
-            //left
-         for (int i = n-level-1; i > level; i--) {
-            result[i][level] = c;
-            c++;
-         }
-         level++;
-      }
-      if (n%2 == 1) {
-         result[n/2][n/2] = c;
-      }
-      return result;
-        
-   }
+
    public String getPermutation(int n, int k) {
       List<Integer> lst = new ArrayList<>();
       String result = "";
@@ -475,38 +342,7 @@ public class Question implements Solution {
       return fact[m+n-3] / fact[m-2] / fact[n-2];
    }
    
-   public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-      int n = obstacleGrid.length;
-      if (n == 0) {
-         return 0;
-      }
-      int m = obstacleGrid[0].length;
-      if (m == 0) {
-         return 0;
-      }
-      int[][] dp = new int[n][m];
-      dp[0][0] = 1;
-      for (int i = 0; i < m; i++) {
-         if (obstacleGrid[0][i] == 1) {
-            break;
-         }
-         dp[0][i] = 1;
-      }
-      for (int i = 0; i < n; i++) {
-         if (obstacleGrid[i][0] == 1) {
-            break;
-         }
-         dp[i][0] = 1;
-      }
-      for (int i = 1; i < n; i++) {
-         for (int j = 1; j < m; j++) {
-            if (obstacleGrid[i][j] == 0) {
-               dp[i][j] = dp[i-1][j] + dp[i][j-1];
-            }
-         }
-      }
-      return dp[n-1][m-1];
-   }
+
    
    public String addBinary(String a, String b) {
       if (a.isEmpty()) 
@@ -767,54 +603,7 @@ public class Question implements Solution {
       return next;
    }
    
-   Map<String, Boolean> cache87 = new HashMap<>();
-    
-   public boolean isScramble(String s1, String s2) {
-        
-      cache87 = new HashMap<>();
-      return recurse(s1, s2);
-   }
-    
-   public boolean recurse(String s1, String s2) {
-      if (s1.length() != s2.length()) 
-         return false;
-      if (s1.length() <= 1) 
-         return s1.equals(s2);
-        
-      if (cache87.containsKey(s1 + " " + s2) ||
-           cache87.containsKey(s2 + " " + s1)) {
-         return cache87.getOrDefault(s1 + " " + s2, false) ||
-                cache87.getOrDefault(s2 + " " + s1, false);
-      }
-        
-      int l = s1.length();
-      int[] n1 = new int[26];
-      int[] n2 = new int[26];
-      for (int i = 0; i < l; i++) {
-         n1[s1.charAt(i) - 'a']++;
-         n2[s2.charAt(i) - 'a']++;
-      }
-      for (int i = 0; i < 26; i++) {
-         if (n1[i] != n2[i]) {
-            cache87.put(s1 + " " + s2, false);
-            return false;
-         }
-      }
-        
-      for (int i = 1; i < l; i++) {
-         if (recurse(s1.substring(0, i), s2.substring(0, i)) &&
-               recurse(s1.substring(i), s2.substring(i))) {
-            cache87.put(s1 + " " + s2, true);
-            return true;
-         } else if (recurse(s1.substring(0, i), s2.substring(l-i)) &&
-                      recurse(s1.substring(i), s2.substring(0, l-i))) {
-            cache87.put(s1 + " " + s2, true);
-            return true;
-         }
-      
-      }
-      return false;
-   }
+
    
    public void merge(int[] nums1, int m, int[] nums2, int n) {
       if (n == 0) 
@@ -873,41 +662,7 @@ public class Question implements Solution {
       }
    }
    
-   public int[] findOrder(int numCourses, int[][] prerequisites) {
-      boolean[] seen = new boolean[numCourses];
-      int[] result = new int[numCourses];
-      int n = 0;
-      Map<Integer, List<Integer>> edgeFrom = new HashMap<>();
-        
-      for (int i = 0; i < prerequisites.length; i++) {
-         edgeFrom.putIfAbsent(prerequisites[i][0], new ArrayList<>());
-         edgeFrom.get(prerequisites[i][0]).add(prerequisites[i][1]);
-      }
-        
-      for (int i = 0; i < numCourses; i++) {
-         if (!seen[i]) {
-            n = dfs(i, seen, edgeFrom, result, n);
-         }
-      }
-        
-      return result;
-   }
-    
-   public int dfs(int i, boolean[] seen, Map<Integer, List<Integer>> edgeFrom, int[] result, int n) {
-      if (!seen[i]) {
-         seen[i] = true;
-         List<Integer> next = edgeFrom.getOrDefault(i, null);
-         if (next != null) {
-            for (int course : next) {
-               n = dfs(course, seen, edgeFrom, result, n);
-            }
-         }
-         result[n] = i;
-         n++;
-      } 
-      return n;
-   }
-   
+         
    public boolean isCycle(int i, Map<Integer, List<Integer>> edgeFrom, boolean[] rec) {
       if (rec[i]) 
          return true;
