@@ -2,10 +2,51 @@
    Generates a snake matrix of the given size (odd).
 */
 
+import java.util.*;
+
 public class SnakeMatrix {
    
    public static void main(String[] args) {
-      int[][] res = snakePointer(7);
+      int[][] res = snakePointer(5);
+      System.out.println(printMatrix(res));
+   }
+   
+   // print the matrix from outer layer to inner layer,
+   // clockwise. 
+   public static ArrayList<Integer> printMatrix(int [][] matrix) {
+      ArrayList<Integer> res = new ArrayList<>();
+      if (matrix.length == 0 || matrix[0].length == 0) {
+         return res;
+      }
+        
+      int[] pointer = new int[]{0, 0};
+      int[][] dirs = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+      int currDir = 0;
+      int xMax = matrix[0].length - 1;
+      int yMax = matrix.length - 1;
+      int xMin = 0;
+      int yMin = 1;
+      int size = (xMax + 1) * (yMax + 1);
+      while (res.size() < size) {
+         res.add(matrix[pointer[0]][pointer[1]]);
+         pointer[0] += dirs[currDir][0];
+         pointer[1] += dirs[currDir][1];
+         if (currDir == 0 && pointer[1] == xMax) {
+            xMax--;
+            currDir = 1;
+         } else if (currDir == 1 && pointer[0] == yMax) {
+            yMax--;
+            currDir = 2;
+         } else if (currDir == 2 && pointer[1] == xMin) {
+            xMin++;
+            currDir = 3;
+         } else if (currDir == 3 && pointer[0] == yMin) {
+            yMin++;
+            currDir = 0;
+         }
+      }
+        
+      return res;
    }
    
    public static int[][] snake(int n) {

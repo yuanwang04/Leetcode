@@ -1,7 +1,8 @@
 import java.util.*;
+import java.io.*;
 
 class Test {
-   public static void main(String[] args) {
+   public static void main(String[] args) throws FileNotFoundException{
       String str = "ab";
       String p = ".*c";
       Question q = new Question();
@@ -15,5 +16,7 @@ class Test {
          
       Solution128 sl = new Solution128();
       System.out.println(q.roomTransport(2, a));
+      
+      q.choose3WithDiffLTEd();
    }
 }

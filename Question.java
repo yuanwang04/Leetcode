@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 
 public class Question implements Solution { 
    
@@ -758,6 +759,38 @@ public class Question implements Solution {
          dp[i] = dp[i-1]+ (dp[i-1] - dp[nums[i - 1] - 1]) + 2;
       }
       return dp[n] % 1000000007;
+   }
+   
+   /*
+     Given an array of integer and a number d,
+     return the number of combinations of 3 numbers in the array
+     whose max difference is less than or equal to d
+   */
+   public void choose3WithDiffLTEd() throws FileNotFoundException{
+      Scanner in = new Scanner(new File("input.txt"));
+      int n = in.nextInt();
+      int d = in.nextInt();
+      int[] nums = new int[n];
+      for (int i = 0; i < n; i++) {
+         nums[i] = in.nextInt();
+      }
+      Arrays.sort(nums);
+      int left = 0;
+      int right = 0;
+      int res = 0;
+      while (right < n || left + 1 < right) {
+         if (right < n && nums[right] - nums[left] <= d) {
+            right++;
+         } else {
+            long diff = right - left - 1;
+            diff %= 99997867;
+            diff = (diff * (diff - 1) / 2) % 99997867;
+            res += diff;
+            res %= 99997867;
+            left++;
+         }
+      }
+      System.out.println(res);
    }
    
 }
