@@ -62,7 +62,7 @@ public class Question implements Solution {
       }
       
       if (p.length() < 2) {
-         if (p.equals(".") && s.length() == 1) {
+         if (p.equals("") && s.length() == 1) {
             return true;
          } else {
             return s.equals(p);
@@ -451,7 +451,7 @@ public class Question implements Solution {
                if (!s.isEmpty()) {
                   s.pop();
                }
-            } else if (!str.equals(".")) {
+            } else if (!str.equals("")) {
                s.push(str);
             }
          }

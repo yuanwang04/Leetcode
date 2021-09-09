@@ -7,6 +7,7 @@ import java.util.*;
 import java.io.*;
 
 public class CatFrame {
+
    public static void main(String[] args) throws FileNotFoundException {
       Scanner in = new Scanner(new File("input.txt"));
       int n = in.nextInt();
