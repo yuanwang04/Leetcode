@@ -1,94 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3ea9ab2-6a7f-44dc-bcb6-1f0605ca39d2" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ConcurrentPrint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DependencyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dijkstra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FillPiBuckets.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FillPiBuckets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdeaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IsMatchDP2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IsMatchDP2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LRUSolution$LRU$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LRUSolution$LRU.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LRUSolution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LRUSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LongestPalindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PalindromePartition.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PalindromePartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SolutionAli.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SolutionAli.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringDistanceOneMove.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringDistanceOneMove.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TencentInterview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TencentInteviewTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="d3ea9ab2-6a7f-44dc-bcb6-1f0605ca39d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ArrayNesting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CatFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/CatFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CatFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CatFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CombinationIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/CombinationIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CombinationIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CombinationIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FindOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FindOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Idea.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Idea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsMatchDP.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsMatchDP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsMatchDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsMatchDP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsScramble.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsScramble.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsScramble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsScramble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/KSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LRUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LRUCache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LargestProductInterval.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LargestProductInterval.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LargestProductInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LargestProductInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LargestRectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LargestRectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LargestRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LargestRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LargestTriangleInHex.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LargestTriangleInHex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LargestTriangleInHex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LargestTriangleInHex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MaJiangCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaJiangCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MaJiangCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaJiangCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MaxLengthOfNSwap.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaxLengthOfNSwap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MaxLengthOfNSwap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaxLengthOfNSwap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyHashSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NArrangeM.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/NArrangeM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NArrangeM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NArrangeM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NXorGreaterM.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/NXorGreaterM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NXorGreaterM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NXorGreaterM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PMAndProgrammer.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/PMAndProgrammer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PMAndProgrammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PMAndProgrammer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PathWithObstacle.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/PathWithObstacle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PathWithObstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PathWithObstacle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programmer.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Programmer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quicksort.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quicksort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quicksort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quicksort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnakeMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/SnakeMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnakeMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SnakeMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solution126.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution126.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solution126.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution126.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solution128.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution128.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solution128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution128.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolutionBoxPushing.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/SolutionBoxPushing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolutionBoxPushing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SolutionBoxPushing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TSP.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/TSP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TSP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrieNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrieNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordDictionary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,8 +153,16 @@
       <workItem from="1617201644556" duration="180000" />
       <workItem from="1619341504794" duration="64000" />
       <workItem from="1619424157776" duration="32000" />
-      <workItem from="1631229012415" duration="298000" />
+      <workItem from="1631229012415" duration="604000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1631229346731</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631229346731</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
