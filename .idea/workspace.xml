@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3ea9ab2-6a7f-44dc-bcb6-1f0605ca39d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ShiftingLetters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SumOfDistancesInTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,14 +56,7 @@
       <recent name="E:\Github\Leetcode\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShiftingLetters">
-    <configuration name="ConcurrentPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConcurrentPrint" />
-      <module name="Leetcode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SumOfDistancesInTree">
     <configuration name="ErectTheFence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ErectTheFence" />
       <module name="Leetcode" />
@@ -80,6 +73,13 @@
     </configuration>
     <configuration name="ShiftingLetters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ShiftingLetters" />
+      <module name="Leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumOfDistancesInTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SumOfDistancesInTree" />
       <module name="Leetcode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SumOfDistancesInTree" />
         <item itemvalue="Application.ShiftingLetters" />
         <item itemvalue="Application.LargestPlusSign" />
         <item itemvalue="Application.ErectTheFence" />
         <item itemvalue="Application.UniqueBinarySearchTrees2" />
-        <item itemvalue="Application.ConcurrentPrint" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +154,7 @@
       <workItem from="1619341504794" duration="64000" />
       <workItem from="1619424157776" duration="32000" />
       <workItem from="1631229012415" duration="9312000" />
-      <workItem from="1631254767618" duration="1772000" />
+      <workItem from="1631254767618" duration="4669000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1631229346731</created>
@@ -191,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631256216833</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ShiftingLetters">
+      <created>1631256687278</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631256687278</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +210,8 @@
     <MESSAGE value="UniqueBinarySearchTrees2" />
     <MESSAGE value="ErectTheFence" />
     <MESSAGE value="LargestPlusSign" />
-    <option name="LAST_COMMIT_MESSAGE" value="LargestPlusSign" />
+    <MESSAGE value="ShiftingLetters" />
+    <option name="LAST_COMMIT_MESSAGE" value="ShiftingLetters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -253,7 +261,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ShiftingLetters.java</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
