@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3ea9ab2-6a7f-44dc-bcb6-1f0605ca39d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ArithmeticSliceSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MaximumProductSubarray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +153,7 @@
       <workItem from="1619424157776" duration="32000" />
       <workItem from="1631229012415" duration="9312000" />
       <workItem from="1631254767618" duration="6661000" />
-      <workItem from="1631301883828" duration="2640000" />
+      <workItem from="1631301883828" duration="3765000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1631229346731</created>
@@ -211,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631263704475</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ArithmeticSliceSubsequence">
+      <created>1631304670661</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631304670661</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +232,8 @@
     <MESSAGE value="LargestPlusSign" />
     <MESSAGE value="ShiftingLetters" />
     <MESSAGE value="SumOfDistancesInTree" />
-    <option name="LAST_COMMIT_MESSAGE" value="SumOfDistancesInTree" />
+    <MESSAGE value="ArithmeticSliceSubsequence" />
+    <option name="LAST_COMMIT_MESSAGE" value="ArithmeticSliceSubsequence" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
