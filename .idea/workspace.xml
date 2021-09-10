@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3ea9ab2-6a7f-44dc-bcb6-1f0605ca39d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UniqueBinarySearchTrees2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ErectTheFence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
       <recent name="E:\Github\Leetcode\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UniqueBinarySearchTrees2">
+  <component name="RunManager" selected="Application.ErectTheFence">
     <configuration name="ConcurrentPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConcurrentPrint" />
       <module name="Leetcode" />
@@ -71,15 +71,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LongestPalindrome" />
+    <configuration name="ErectTheFence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ErectTheFence" />
       <module name="Leetcode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TencentInterview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TencentInterview" />
+    <configuration name="LongestPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LongestPalindrome" />
       <module name="Leetcode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ErectTheFence" />
         <item itemvalue="Application.UniqueBinarySearchTrees2" />
         <item itemvalue="Application.ConcurrentPrint" />
         <item itemvalue="Application.LongestPalindrome" />
         <item itemvalue="Application.DependencyList" />
-        <item itemvalue="Application.TencentInterview" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +151,7 @@
       <workItem from="1617201644556" duration="180000" />
       <workItem from="1619341504794" duration="64000" />
       <workItem from="1619424157776" duration="32000" />
-      <workItem from="1631229012415" duration="1911000" />
+      <workItem from="1631229012415" duration="9104000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1631229346731</created>
@@ -167,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631229718049</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="UniqueBinarySearchTrees2">
+      <created>1631230963154</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631230963154</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +183,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="ArrayNesting" />
-    <option name="LAST_COMMIT_MESSAGE" value="ArrayNesting" />
+    <MESSAGE value="UniqueBinarySearchTrees2" />
+    <option name="LAST_COMMIT_MESSAGE" value="UniqueBinarySearchTrees2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -213,6 +221,11 @@
           <url>file://$PROJECT_DIR$/src/LongestPalindrome.java</url>
           <line>26</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ErectTheFence.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
