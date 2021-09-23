@@ -29,6 +29,12 @@ public class BasicCalculator {
         return result.res;
     }
 
+    /**
+     * Solved using recursion. Each recurse solves one sub-expression with brackets.
+     * @param i the idx to start solving
+     * @param s the string
+     * @return A Result, with the end index of the subexpression and the value.
+     */
     private Result calculateRecurse(int i, String s) {
         Op op = Op.PLUS;
         int ans = 0;
