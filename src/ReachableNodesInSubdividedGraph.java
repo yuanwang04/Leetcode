@@ -28,13 +28,18 @@ public class ReachableNodesInSubdividedGraph {
     public static void main(String[] args) {
         ReachableNodesInSubdividedGraph solve = new ReachableNodesInSubdividedGraph();
         int[][] edges = new int[][]{
-                {1, 2, 4},
-                {1, 4, 6},
-                {1, 3, 1},
-                {2, 3, 4},
-                {3, 4, 5},
+                {3,4,8},
+                {0,1,3},
+                {1,4,0},
+                {1,2,3},
+                {0,3,2},
+                {0,4,10},
+                {1,3,3},
+                {2,4,3},
+                {2,3,3},
+                {0,2,10}
         };
-        int maxMoves = 17;
+        int maxMoves = 7;
         int n = 5;
         System.out.println(solve.reachableNodes(edges, maxMoves, n));
     }
@@ -46,10 +51,10 @@ public class ReachableNodesInSubdividedGraph {
             edgeMap.put(i, new HashMap<>());
         }
         for (int[] edge : edges) {
-            if (edge[2] != 0) {
+
                 edgeMap.get(edge[0]).put(edge[1], edge[2]);
                 edgeMap.get(edge[1]).put(edge[0], edge[2]);
-            }
+
         }
 
         Map<Integer, Integer> distMap = new HashMap<>();
