@@ -1,3 +1,6 @@
 .idea/*
 
 out/*
+
+src/GoogleCoding.java
+src/TencentInterview.java
